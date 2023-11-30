@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "d5604c67-11c6-4842-a224-cdef076f836d",
             "zIndex": 1,
+            "id": "d5604c67-11c6-4842-a224-cdef076f836d",
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -66,8 +66,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "8572496e-5db0-49f4-b452-951966f690fc",
             "zIndex": 2,
+            "id": "8572496e-5db0-49f4-b452-951966f690fc",
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -90,21 +90,23 @@
             },
             "attrs": {
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
-            "id": "bab5b5bb-7174-47df-a9a1-0099e96e5287",
             "zIndex": 3,
+            "id": "bab5b5bb-7174-47df-a9a1-0099e96e5287",
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "Stockage",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -112,8 +114,22 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "dade8bcd-c4d5-4ae8-a479-e4bd316aa6c3",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Divulgation d'information",
+                  "description": "Fournissez une description de cette menace",
+                  "mitigation": "Fournir des mesures de mitigation ou de prévention pour cette menace",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "8"
+                }
+              ]
             }
           },
           {
@@ -200,6 +216,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
